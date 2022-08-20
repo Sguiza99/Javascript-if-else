@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fig = prompt('Digite que figura le gustaria calcular; 1.Triangulo, 2.Cuadrado, 3.Circulo')
+        
+        fig = parseInt(fig)
+
+        switch(fig)
+        {
+            case 1:
+                let base = prompt ('Digite la base del triangulo')
+                let alt = prompt ('digite la altura del triangulo')
+
+                base = parseInt(base)
+                alt = parseInt(alt)
+
+                Mult = base * alt
+                Mult = parseInt(Mult)
+
+                Re = Mult / 2
+                Re = parseInt(Re)
+
+                document.write('El area del triangulo es: '+Re)
+            break;
+            
+            case 2:
+            let l1 = prompt ('Digite la base del triangulo')
+            let l2 = prompt ('digite la altura del triangulo')
+
+                l1 = parseInt(l1)
+                l2 = parseInt(l2)
+
+                area = l1 * l2
+                area = parseInt(area)
+
+                document.write('El area del Cuadrado es: '+area)
+            break;
+
+            case 3:
+            let R = prompt('Digite el radio del circulo')
+
+            R = parseInt(R)
+
+            R2= R*R
+
+            let pi = 3.1416
+
+            pi = parseInt(pi)
+
+           Area = pi * R2
+
+           Area = parseInt(Area)
+
+           document.write ('El radio del circulo es: '+Area)
+
+            break;
+
+
+        }
+    </script>
+</body>
+</html>
